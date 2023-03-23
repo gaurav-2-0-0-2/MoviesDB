@@ -21,10 +21,23 @@ function App() {
 
 
 
+  // const fetchData = async () => {
+  //   try {
+  //     const response = await fetch(API_ENDPOINT)
+  //     const res = await response.json();
+  //     console.log(res);
+  //     setMovie(res.results);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
+
+  /* GET request using AXIOS */
+
   const fetchData = async () => {
     try {
-      const response = await fetch(API_ENDPOINT)
-      const res = await response.json();
+      const response = await axios.get(API_ENDPOINT)
+      const res = await response.data;
       console.log(res);
       setMovie(res.results);
     } catch (error) {
