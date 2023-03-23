@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div className="mx-10 my-20">
-     <h1 className="text-3xl"> Movie DB</h1>
+     <h1 className="text-3xl"> Movies DB</h1>
       <form className="mt-12">
         <input
         className="h-14 w-[45%] px-4"
