@@ -10,7 +10,7 @@ import MovieBox from "./MovieBox";
 // const Dotenv = require('dotenv-webpack');
 // import usefetch from "./useFetch"; 
 ///////// ****************************************************
-const API_ENDPOINT = `https://api.themoviedb.org/3/movie/popular?api_key=${import.meta.env.VITE_API_KEY}`;
+const API_ENDPOINT = import.meta.env.VITE_URL;
 // console.log(url);
 
 function App() {
