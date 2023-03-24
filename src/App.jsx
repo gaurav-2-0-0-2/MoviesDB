@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import MovieBox from "./MovieBox";
+import MovieBox from "./MovieBox.jsx";
 
 //////// NOT TO USE SINCE YOU ARE USING VITE AS A BUNDLER 
 // import process from "process";
@@ -37,7 +37,7 @@ function App() {
   const fetchData = async () => {
     try {
       const response = await axios.get(API_ENDPOINT)
-      const res = await response.data;
+      const res = response.data;
       console.log(res);
       setMovie(res.results);
     } catch (error) {
