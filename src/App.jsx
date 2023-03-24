@@ -11,7 +11,7 @@ import MovieBox from "./MovieBox.jsx";
 // import usefetch from "./useFetch"; 
 ///////// ****************************************************
 const API_ENDPOINT = import.meta.env.VITE_URL;
-// console.log(url);
+// console.log(API_ENDPOINT);
 
 function App() {
 
@@ -36,9 +36,10 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(API_ENDPOINT)
+      const response = await axios.get(API_ENDPOINT);
+      console.log(response);
       const res = response.data;
-      console.log(res);
+      // console.log(res);
       setMovie(res.results);
     } catch (error) {
       console.log(error);
