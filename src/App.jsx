@@ -73,7 +73,7 @@ function App() {
      <h1 className="text-3xl text-center md:text-left"> Movies DB</h1>
       <form className="mt-12 relative">
         <input
-        className="h-14 md:w-[40%] md:left-0 left-[3.5rem] px-4 absolute"
+        className="h-14 md:w-[40%] md:left-0 left-[4rem] px-4 absolute"
           type="search"
           name="search-form"
           id="search-form"
