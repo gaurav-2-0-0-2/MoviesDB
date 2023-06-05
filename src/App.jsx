@@ -69,11 +69,11 @@ function App() {
   }
 
   return (
-    <div className="mx-10 my-20">
-     <h1 className="text-3xl"> Movies DB</h1>
-      <form className="mt-12">
+    <div className="md:mx-10 my-20">
+     <h1 className="text-3xl text-center md:text-left"> Movies DB</h1>
+      <form className="mt-12 relative">
         <input
-        className="h-14 w-[45%] px-4"
+        className="h-14 md:w-[40%] md:left-0 left-[3.5rem] px-4 absolute"
           type="search"
           name="search-form"
           id="search-form"
@@ -82,7 +82,7 @@ function App() {
           onChange={(e) => setQ(e.target.value)}
         />
       </form>
-      <div className="card mt-10">
+      <div className="card mt-36">
         {search(movies).map((movie) => <MovieBox key={movie.id} {...movie} />)}
       </div>
     </div>
