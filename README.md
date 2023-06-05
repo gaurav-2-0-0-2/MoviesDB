@@ -1,5 +1,7 @@
 # MoviesDB
 
+Check the [live](https://movies-db-llon.vercel.app/) version<br> 
+
 Your own moviesDB 🎥 website where you can:<br>
 ⭐ Search for the latest releases.<br>
 ⭐ Read the description about the latest movies.<br>
