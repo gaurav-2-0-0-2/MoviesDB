@@ -10,7 +10,8 @@ import MovieBox from "./MovieBox.jsx";
 // const Dotenv = require('dotenv-webpack');
 // import usefetch from "./useFetch"; 
 ///////// ****************************************************
-const API_ENDPOINT = import.meta.env.VITE_URL;
+const API_KEY = import.meta.env.VITE_API_KEY;
+const API_ENDPOINT = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`;
 // console.log(API_ENDPOINT);
 
 function App() {
@@ -37,12 +38,12 @@ function App() {
   const fetchData = async () => {
     try {
       const response = await axios.get(API_ENDPOINT);
-      console.log(response);
-      const res = response.data;
+      // console.log(response);
+      // const res = response.data;
       // console.log(res);
-      setMovie(res.results);
+      setMovie(response.data.results);
     } catch (error) {
-      console.log(error);
+       console.log(error)
     }
   }
 
